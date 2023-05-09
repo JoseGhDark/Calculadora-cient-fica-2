@@ -1,0 +1,103 @@
+import math
+
+print("Bienvenido a la calculadora científica.")
+
+# Funciones matemáticas
+
+def suma(a, b):
+
+    return a + b
+
+def resta(a, b):
+
+    return a - b
+
+def multiplicacion(a, b):
+
+    return a * b
+
+def division(a, b):
+
+    return a / b
+
+def potencia(a, b):
+
+    return a ** b
+
+def raiz_cuadrada(a):
+
+    return math.sqrt(a)
+
+# Menú principal
+
+while True:
+
+    print("1. Suma")
+
+    print("2. Resta")
+
+    print("3. Multiplicación")
+
+    print("4. División")
+
+    print("5. Potencia")
+
+    print("6. Raíz cuadrada")
+
+    print("0. Salir")
+
+    opcion = int(input("Ingrese una opción: "))
+
+    if opcion == 0:
+
+        break
+
+    if opcion == 1:
+
+        a = float(input("Ingrese el primer número: "))
+
+        b = float(input("Ingrese el segundo número: "))
+
+        print("La suma es: ", suma(a, b))
+
+    elif opcion == 2:
+
+        a = float(input("Ingrese el primer número: "))
+
+        b = float(input("Ingrese el segundo número: "))
+
+        print("La resta es: ", resta(a, b))
+
+    elif opcion == 3:
+
+        a = float(input("Ingrese el primer número: "))
+
+        b = float(input("Ingrese el segundo número: "))
+
+        print("La multiplicación es: ", multiplicacion(a, b))
+
+    elif opcion == 4:
+
+        a = float(input("Ingrese el primer número: "))
+
+        b = float(input("Ingrese el segundo número: "))
+
+        print("La división es: ", division(a, b))
+
+    elif opcion == 5:
+
+        a = float(input("Ingrese el número base: "))
+
+        b = float(input("Ingrese el exponente: "))
+
+        print("La potencia es: ", potencia(a, b))
+
+    elif opcion == 6:
+
+        a = float(input("Ingrese el número: "))
+
+        print("La raíz cuadrada es: ", raiz_cuadrada(a))
+
+    else:
+
+        print("Opción inválida. Intente nuevamente.")
